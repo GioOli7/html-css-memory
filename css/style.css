@@ -42,11 +42,15 @@ h1 {
     position: relative;
     width: 180px;
     height: 210px;
-    background-color: tomato;
+    background-color: white;
     background-image: url("../img/pattern.png");
     background-size: contain;
     margin: 15px 10px;
     border-radius: 10px;
+}
+
+.card.visible {
+    background-image: none;
 }
 
 .card.visible h2{
