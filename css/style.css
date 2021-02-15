@@ -16,11 +16,15 @@ h1 {
     color: white;
 }
 
-h2 {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.card:hover h2{
+    opacity: 1;
 }
 
 .container {
@@ -34,29 +38,38 @@ h2 {
 }
 
 .card {
-    display: inline-block;
+    float: left;
     position: relative;
     width: 180px;
     height: 210px;
+    background-color: tomato;
     background-image: url("../img/pattern.png");
     background-size: contain;
     margin: 15px 10px;
+    border-radius: 10px;
 }
 
-/* RIGA UNO */
+.card.visible h2{
+    opacity: 1;
+}
 
-.riga:nth-child(1) .card:nth-child(1):hover {
+.card img {
+    width: 100%;
+}
+
+.image h2 {
+    position: relative;
+    bottom: 20px;
+}
+
+.image {
+    opacity: 0;
+}
+
+.image:hover {
+    opacity: 1;
+    background-image: none;
     background-color: white;
-    background-image: url("../img/noun_air_balloon_3134741.png");
-    background-position: center;
-    background-size: 80%;
-    background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
-.riga:nth-child(2) .card:nth-child(2) {
-    background-color: white;
-    background-image: url("../img/noun_air_balloon_3134741.png");
-    background-position: center;
-    background-size: 80%;
-    background-repeat: no-repeat;
-}
