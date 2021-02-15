@@ -14,6 +14,7 @@ h1 {
     text-transform: uppercase;
     padding: 20px;
     color: white;
+    text-shadow: 2px 2px 1px gray;
 }
 
 .clearfix {
@@ -47,6 +48,7 @@ h1 {
     background-size: contain;
     margin: 15px 10px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .card.visible {
@@ -61,9 +63,12 @@ h1 {
     width: 100%;
 }
 
-.image h2 {
+.card h2 {
     position: relative;
-    bottom: 20px;
+    bottom: 15px;
+    color: orange;
+    text-shadow: 2px 2px 1px gray;
+    font-size: 28px;
 }
 
 .image {
