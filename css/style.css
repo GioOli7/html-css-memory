@@ -21,15 +21,12 @@ h3 {
     text-align: center;
 }
 
+/* UTILITIES */
+
 .clearfix {
     content: "";
     display: table;
     clear: both;
-}
-
-
-.card:hover h2{
-    opacity: 1;
 }
 
 .container {
@@ -38,10 +35,13 @@ h3 {
     text-align: center;
 }
 
+/* ============== */
+
 .riga {
     margin: 0 auto;
 }
 
+/* Style CARD */
 .card {
     float: left;
     position: relative;
@@ -56,18 +56,6 @@ h3 {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.card.visible {
-    background-image: none;
-}
-
-.card.visible h2{
-    opacity: 1;
-}
-
-.card.visible:hover h2{
-    color: purple;
-}
-
 .card img {
     width: 100%;
 }
@@ -80,10 +68,31 @@ h3 {
     font-size: 28px;
 }
 
+/* Style card iniziale visibile */
+.card.visible {
+    background-image: none;
+}
+
+.card.visible h2{
+    opacity: 1;
+}
+
+.card.visible:hover h2{
+    color: purple;
+}
+/* =================== */
+
+/* contenuto card nascosto di default */
 .image {
     opacity: 0;
 }
 
+/* mostro titolo con hover */
+.card:hover h2{
+    opacity: 1;
+}
+
+/* mostro image con hover + styles*/
 .image:hover {
     opacity: 1;
     background-image: none;
