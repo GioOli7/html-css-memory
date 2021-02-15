@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nerko One', cursive;
+    background-color: #ADD8E6;
+}
+
+h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    padding: 20px;
+    color: white;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.riga {
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.card {
+    display: inline-block;
+    width: 180px;
+    height: 210px;
+    background-color: blue;
+    margin: 10px;
+}
