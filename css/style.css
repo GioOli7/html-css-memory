@@ -17,6 +17,10 @@ h1 {
     text-shadow: 2px 2px 1px gray;
 }
 
+h3 {
+    text-align: center;
+}
+
 .clearfix {
     content: "";
     display: table;
@@ -57,6 +61,10 @@ h1 {
 
 .card.visible h2{
     opacity: 1;
+}
+
+.card.visible:hover h2{
+    color: purple;
 }
 
 .card img {
